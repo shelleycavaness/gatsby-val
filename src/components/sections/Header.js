@@ -12,7 +12,7 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "justice-clipart-legal-issue-2" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {

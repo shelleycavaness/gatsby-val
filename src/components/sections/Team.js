@@ -56,7 +56,7 @@ const Team = () => (
         }
         art_team: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "team_work" }
+          name: { eq: "kisspng-tree-drawing" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1600) {

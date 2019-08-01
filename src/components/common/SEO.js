@@ -2,13 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  description: 'Valerie Raynaud',
+  title: 'Valerie Raynaud',
   url: '',
-  author: 'ajayns',
+  author: 'ajayns, shelley cavaness',
   keywords: ['gatsby', 'site', 'absurd'],
   twitter: {
-    id: '@ajayns08',
+    id: '',
     img: '',
   },
   facebook: {

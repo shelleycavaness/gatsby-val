@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  pathPrefix: "/gatsby-val",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-svgr`,
@@ -24,11 +25,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Valerie Raynaud`,
+        short_name: `Valerie`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#f9c76c`,
+        theme_color: `#f9c76c`,
         display: `minimal-ui`,
         icon: `static/favicon.svg`,
       },

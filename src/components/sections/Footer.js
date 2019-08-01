@@ -31,7 +31,7 @@ const Footer = () => (
       query {
         art_pot: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "customers_pot" }
+          name: { eq: "business-idea-1553769_960_720" }
         ) {
           childImageSharp {
             fluid(maxWidth: 960) {
