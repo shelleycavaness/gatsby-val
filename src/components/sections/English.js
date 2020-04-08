@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 
-const About = () => (
+const English = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -21,8 +21,8 @@ const About = () => (
         }
 
         art_learn: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "lightbulb2" }
+          sourceInstanceName: { eq: "team" }
+          name: { eq: "building" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -33,7 +33,7 @@ const About = () => (
 
         art_ideas: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
+          name: { eq: "val_id" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -44,19 +44,13 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="english">
         <Container>
           <Grid>
             <div>
-              <h2>Plus vite que la competition</h2>
+              <h2>Speed past the competition </h2>
               <p>
-              Boulogne Billancourt Paris Nanterre
-              Avocate au Barreau Hauts de Seine Nanterre
-              Spécialisée en droit social droit du travail protection sociale
-              Droit des affaires Droit civil
-              Conseils et contentieux
-              Chargée d' interventions Droit social et relations de travail Droit civil Master 2 Paris Montpellier
-              Directeur de recherches Université de Luxembourg Centre Gabriel Lippman GD Luxembourg Droit des contrats, droit du commerce électronique
+              The human dimension is at the center of our practice. Speaking the same language as our all stakeholders is essntial, whether they are legal counsel, legal professionals, human resources managers or directors, is our goal to create a climate of trust that favors sustainable and constructive collaboration. Aware of the unique problems encountered by start-ups and growing companies in managing their social and HR issues, we have also a specific support of offerings.
               </p>
             </div>
             <Art>
@@ -68,9 +62,21 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Our Specializations</h2>
               <p>
-              "Maître Valerie Raynaud est un avocat compétent en droit Travail qui exerce à Boulogne-Billancourt depuis 1992"
+              Collective bargaining and labour relations.
+              </p><br/>
+              <p> 
+              Social management of mergers and acquisitions
+              </p> <br/>
+              <p>
+              Pensions and insurance benefit schemes
+              </p> <br/>
+              <p>
+              Individual and collective disputes
+              </p><br/>
+              <p>
+              Social Security:URSAAF (Social Security contributions collections agency) disputes
               </p>
             </div>
           </Grid>
@@ -140,4 +146,4 @@ const Art = styled.figure`
   width: 100%;
 `;
 
-export default About;
+export default English;

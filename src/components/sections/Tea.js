@@ -7,28 +7,28 @@ import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Josh Peck',
-    image: 'josh.jpg',
-    role: 'Founder',
+    name: 'Droit social',
+    image: '3women_350.jpg',
+    role: 'Contrats et conventions collectives - négociations et Conflits du travail - droit et contentieux de la sécurite sociale',
   },
   {
-    name: 'Lisa Haydon',
-    image: 'lisa.jpg',
+    name: 'Checkmate',
+    image: 'chessmate.jpg',
     role: 'Art Director',
   },
   {
-    name: 'Ashlyn Harris',
-    image: 'ashlyn.jpg',
+    name: 'woman',
+    image: 'w1.jpg',
     role: 'Frontend Engineer',
   },
   {
-    name: 'Todd Joseph',
-    image: 'todd.jpg',
+    name: 'skype',
+    image: 'w2.jpg',
     role: 'Designer',
   },
   {
     name: 'Martin White',
-    image: 'martin.jpg',
+    image: 'stairs.jpg',
     role: 'Backend Engineer',
   },
   {
@@ -38,7 +38,7 @@ const TEAM = [
   },
 ];
 
-const Team = () => (
+const Tea = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -56,7 +56,7 @@ const Team = () => (
         }
         art_team: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "judge" }
+          name: { eq: "lightbulb2" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1600) {
@@ -67,9 +67,9 @@ const Team = () => (
       }
     `}
     render={data => (
-      <Section id="team" accent="secondary">
+      <Section id="tea" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
+          <h1>Domaines d'interventions</h1>
           <TeamGrid>
             {TEAM.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
@@ -78,8 +78,9 @@ const Team = () => (
 
               return (
                 <div>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
                   <Title>{name}</Title>
+                  <Img fluid={img.childImageSharp.fluid} alt={name} />
+              
                   <Subtitle>{role}</Subtitle>
                 </div>
               );
@@ -142,7 +143,7 @@ const ArtMobile = styled.figure`
   display: none;
   margin-top: 64px;
   margin-bottom: -60%;
-
+  Tea
   @media (max-width: ${props => props.theme.screen.md}) {
     display: block;
   }
@@ -158,4 +159,4 @@ const Subtitle = styled.p`
   color: ${props => props.theme.color.black.light};
 `;
 
-export default Team;
+export default Tea;
