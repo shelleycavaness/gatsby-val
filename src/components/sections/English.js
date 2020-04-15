@@ -48,7 +48,7 @@ const English = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition </h2>
+              <h2>Speed past the competition with our help</h2>
               <p>
               The human dimension is at the center of our practice. Speaking the same language as our all stakeholders is essntial, whether they are legal counsel, legal professionals, human resources managers or directors, is our goal to create a climate of trust that favors sustainable and constructive collaboration. Aware of the unique problems encountered by start-ups and growing companies in managing their social and HR issues, we have also a specific support of offerings.
               </p>
@@ -62,7 +62,7 @@ const English = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Our Specializations</h2>
+              <h2>Our Specializations and Expertise</h2>
               <p>
               Collective bargaining and labour relations.
               </p><br/>
@@ -82,14 +82,21 @@ const English = () => (
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
-              <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
-                <br />
-                <br />
-                Gatsby is fast in every way that matters.
-              </p>
+              <h2>Common questions</h2>
+              <ul>
+              <li><p>les honoraires au temps passé-
+                
+                Chaque avocat a un tarif horaire, celui de Maître Kudar est de 250 € HT, soit 300 € TTC. Lorsque l’avocat facture au temps passé, il enregistre le temps qu’il passe sur un dossier et facture ce temps. Il est possible d’avoir une visibilité sur les honoraires payés au final en demandant à l’avocat une estimation du temps qu’il pense passer sur le dossier.
+              </p> </li>   
+              <li>  <p>
+               les honoraires forfaitaires-
+                Un forfait est prévu avec l’avocat dès le début (hors frais de déplacement et de procédure). Il est également possible de prévoir un forfait en fonction du travail qui sera effectué par l’avocat si l’on ne sait pas encore quel type de procédure va s’appliquer.
+             </p></li>
+             <li><p>
+                les honoraires de résultat-
+                L’avocat peut fixer un pourcentage qui sera dû en cas de succès et qui représente un pourcentage de la somme obtenue. Il est interdit de ne prendre que cet honoraire de résultat, il doit forcément être accompagné d’un honoraire fixe. Maître Kudar pratique souvent ce type d’honoraire dans ses dossiers de réparation du dommage corporel (accident de la route).
+              </p> </li>
+              </ul>
             </div>
             <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />

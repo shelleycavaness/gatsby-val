@@ -5,8 +5,12 @@ import Navbar from '@common/Navbar';
 
 import Header from '@sections/Header';
 import About from '@sections/About';
-import Brands from '@sections/Brands';
-import Team from '@sections/Team';
+// import Brands from '@sections/Brands';
+// import Tea from '@sections/Tea';
+ import Contact from '@sections/Contact';
+
+import Expertises from '@sections/Expertises';
+import English from '@sections/English'
 import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
 
@@ -15,9 +19,11 @@ const IndexPage = () => (
     <Navbar />
     <Header />
     <About />
-    <Brands />
-    <Team />
     <Faq />
+    <Expertises />
+  
+    <Contact />
+    <English />
     <Footer />
   </Layout>
 );

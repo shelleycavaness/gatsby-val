@@ -12,7 +12,7 @@ const EXPERTISES = [
         role: 'Contrats et conventions collectives - négociations et Conflits du travail - droit et contentieux de la sécurite sociale',
     },
     {
-        name: 'Droit de protection sociale  ',
+        name: 'Droit de protection sociale',
         image: 'chessmate.jpg',
         role: 'Préservation Santé et sécurité  Traitement et litiges de sécurité sociale Gestion des droits et reconstition des parcours de carrière, mobilité internationale simulation retraite.',
     },
@@ -22,9 +22,9 @@ const EXPERTISES = [
         role: ' Aspects juridiques, sociaux et organisationnels des restructurations. Stratégie organisation et délégations Gestion de crise et de conflits .',
     },
     {
-        name: 'skype',
+        name: 'Gestion des risques et des responsabilités',
         image: 'w2.jpg',
-        role: 'Designer',
+        role: 'Gestion des risques et des responsabilités',
     },
     {
         name: 'Droit des affaires/contrats droit civil',
@@ -56,10 +56,10 @@ const Expertises = () => (
         }
         skill: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "two_women" }
+          name: { eq: "flag" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 400, maxHeight: 400) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }

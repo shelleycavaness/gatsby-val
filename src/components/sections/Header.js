@@ -39,8 +39,8 @@ const Header = () => (
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <StyledExternalLink href="https://www.linkedin.com/in/val%C3%A9rie-raynaud-7187b913/">
+                  prendre rdv &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>

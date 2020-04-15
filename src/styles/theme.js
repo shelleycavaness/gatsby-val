@@ -16,11 +16,11 @@ const theme = {
       dark: '#F6F6F6',
     },
     black: {
-      lighter: '#ABA8AF',
-      light: '#564F62',
-      regular: '#211E26',
+      lighter: '#2a314a', //'#ABA8AF',  
+      light: '#2a314a', //'#564F62',
+      regular: '#2a314a', //'#211E26',
     },
-    primary: '#f9c76c',
+    primary:    '#3EC9A7',//'#46b8a5', //'#f9c76c',
   },
   screen: {
     xs: '575px',
