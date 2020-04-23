@@ -8,12 +8,12 @@ import { Section, Container } from '@components/global';
 const EXPERTISES = [
     {
         name: 'Droit social',
-        image: '3women_350.jpg',
+        image: 'chessmate.jpg',
         role: 'Contrats et conventions collectives - négociations et Conflits du travail - droit et contentieux de la sécurite sociale',
     },
     {
         name: 'Droit de protection sociale',
-        image: 'chessmate.jpg',
+        image: 'signature_square.jpg',
         role: 'Préservation Santé et sécurité  Traitement et litiges de sécurité sociale Gestion des droits et reconstition des parcours de carrière, mobilité internationale simulation retraite.',
     },
     {
@@ -54,16 +54,6 @@ const Expertises = () => (
             }
           }
         }
-        skill: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "flag" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 400, maxHeight: 400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
       }
     `}
     render={data => (
@@ -85,12 +75,6 @@ const Expertises = () => (
               );
             })}
           </SkillGrid>
-          <Art>
-            <Img fluid={data.skill.childImageSharp.fluid} />
-          </Art>
-          <ArtMobile>
-            <Img fluid={data.skill.childImageSharp.fluid} />
-          </ArtMobile>
         </Container>
       </Section>
     )}

@@ -31,16 +31,7 @@ const English = () => (
           }
         }
 
-        art_ideas: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "val_id" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
+        
       }
     `}
     render={data => (
@@ -98,9 +89,7 @@ const English = () => (
               </p> </li>
               </ul>
             </div>
-            <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
-            </Art>
+            
           </Grid>
         </Container>
       </Section>

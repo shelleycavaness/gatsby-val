@@ -7,21 +7,21 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 import GithubIcon from '@static/icons/github.svg';
-import InstagramIcon from '@static/icons/instagram.svg';
+import Linkedin from '@static/icons/linkedin.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
+    link: 'https://github.com/shelleycavaness/gatsby-val',
   },
   {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    icon: Linkedin,
+    link: 'https://www.linkedin.com/in/val%C3%A9rie-raynaud-7187b913/',
   },
   {
     icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    link: 'https://twitter.com/shelleycavaness',
   },
 ];
 
@@ -31,7 +31,7 @@ const Footer = () => (
       query {
         art_pot: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "business-idea-1553769_960_720" }
+          name: { eq: "business-idea" }
         ) {
           childImageSharp {
             fluid(maxWidth: 960) {

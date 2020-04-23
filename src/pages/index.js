@@ -21,9 +21,8 @@ const IndexPage = () => (
     <About />
     <Faq />
     <Expertises />
-  
-    <Contact />
     <English />
+    <Contact />
     <Footer />
   </Layout>
 );

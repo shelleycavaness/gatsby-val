@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 // import MapContact from './MapContact';
-import ExternalLink from '@common/ExternalLink';
+// import ExternalLink from '@common/ExternalLink';
 
 
 import { Section, Container } from '@components/global';
@@ -30,21 +30,26 @@ const ContactMe = () => (
          <Container>
           <Grid>
             <div>
-              <h2>Comment Contacter Val</h2>
+              <h2>Comment Contacter Val ?</h2>
+              <p>48 Rue de Paris </p>
+              <p>92100 Boulogne-Billancourt</p>
+              <p>Tel. 0000000000000</p> 
+              <p>Email : @superVal.com </p>
             </div>
+          </Grid>
+          <Grid inverse>  
+            
             <Art>
               <Img fluid={data.art_story.childImageSharp.fluid} />
             </Art>
-            <p>Tel. 0000000000000</p> 
-            <p>Email : @superVal.com </p>
-            
+          
           </Grid>
           <Grid>
-          <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=48%20rue%20de%20paris%20boulogne%20france&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
-           
+            <div>
+            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=48%20rue%20de%20paris%20boulogne%20france&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
+            </iframe>
+            </div>
           </Grid>
-          <h3> 48 Rue de Paris 92100 Boulogne-Billancourt</h3> 
           </Container> 
         </Section>
       )}
@@ -59,7 +64,7 @@ const ContactMe = () => (
   align-items: center;
   justify-items: center;
   margin: 24px 0;
-   
+  background-color: ${props => props.theme.color.white.dark}; 
 
   ${props =>
     props.inverse &&
@@ -69,7 +74,7 @@ const ContactMe = () => (
   `}
 
   h2 {
-    margin-bottom: 1px;
+    margin-bottom: 16px;
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -78,7 +83,7 @@ const ContactMe = () => (
     margin-bottom: 96px;
 
     &:last-child {
-      margin-bottom: 24px;
+      margin-bottom: 14px;
     }
 
     ${props =>
@@ -96,7 +101,6 @@ const Art = styled.figure`
   max-width: 380px;
   width: 100%;
 `;
-
 
 // background-color: ${props => props.theme.color.primary}; 
 export default ContactMe;

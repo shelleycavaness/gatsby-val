@@ -78,11 +78,10 @@ const About = () => (
             <div>
               <h2>Grow and build your ideas</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+              Certificats de droit du travail - droit de la sécurité sociale protection sociale
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                Valerie is fast in every way that matters.
               </p>
             </div>
             <Art>
