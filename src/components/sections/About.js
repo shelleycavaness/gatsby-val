@@ -76,7 +76,7 @@ const About = () => (
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>Grow and build your ideas with us</h2>
               <p>
               Certificats de droit du travail - droit de la sécurité sociale protection sociale
                 <br />
