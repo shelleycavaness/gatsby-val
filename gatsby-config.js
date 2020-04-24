@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  pathPrefix: `/gatsby-val`,
+  pathPrefix: `/gatsby-val/public`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-svgr`,
