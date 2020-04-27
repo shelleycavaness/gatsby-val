@@ -1,8 +1,4 @@
 
-An absurd Gatsby starter [absurd.design](https://absurd.design/) Experimentation on how that could be put together on a site ended up as this starter.
-
-
-
 ## Installation
 
 Install the dependencies:
