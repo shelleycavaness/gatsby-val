@@ -6,7 +6,7 @@
   "author": "Shelley Cavaness- shellyeah",
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
-    "gatsby": "^2.20.20",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-google-fonts": "^0.0.4",
